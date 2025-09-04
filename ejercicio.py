@@ -1,12 +1,12 @@
 from tkinter import *
 
-#variables globales
+# variables globales
 BASE = 460
 ALTURA = 220
 
 # ventana pricipal
 ventana_principal = Tk()
-ventana_principal.title("Tren Sistemas")
+ventana_principal.title("Ejercicio")
 ventana_principal.resizable(False,False)
 ventana_principal.geometry("500x500")
 ventana_principal.config(bg="white")
@@ -26,7 +26,8 @@ c.place(x=10,y=10)
 # ---------------------------
 
 # rectangulo
-rectangulo = c.create_rectangle(70,100,335,180, fill="gray", outline="black")
+rectangulo = c.create_rectangle(90,100,335,180, fill="gray", outline="black")
+rectangulo = c.create_rectangle(90,120,335,180, fill="gray", outline="black")
 
 # Cabina
 cabina = c.create_rectangle(250,50,330,100, fill="gray", outline="black")
@@ -40,14 +41,14 @@ texto = c.create_text(200,140, text="Soreth", font=("Arial",20,"bold"), fill="bl
 
 # Carita
 ventana = c.create_rectangle(260,60,320,100, fill="white", outline="black")
-cara = c.create_oval(265,65,315,95, fill="gold", outline="black")
+cara = c.create_oval(265,65,315,95, fill="yellow", outline="black")
 boca = c.create_oval(285,80,295,90, fill="red")
 ojo1 = c.create_oval(275,72,283,80, fill="white")
 ojo2 = c.create_oval(297,72,305,80, fill="white")
 ceja1 = c.create_line(274,68,282,70, width=2, fill="black")
 ceja2 = c.create_line(296,70,306,68, width=2, fill="black")
 
-# Ruedas
+# Rueditas
 rueda1 = c.create_oval(110,170,150,210, fill="dimgray", outline="black")
 rueda2 = c.create_oval(170,170,210,210, fill="dimgray", outline="black")
 rueda3 = c.create_oval(230,170,270,210, fill="dimgray", outline="black")
